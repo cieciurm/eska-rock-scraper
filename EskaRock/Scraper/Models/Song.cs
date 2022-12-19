@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace EskaRock.Scrapper.Models;
+namespace EskaRock.Scraper.Models;
 
 public class Song
 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace EskaRock.Scrapper;
+namespace EskaRock.Scraper;
 
 public static class Helper
 {

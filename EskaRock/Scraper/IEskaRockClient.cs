@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using EskaRock.Scrapper.Models;
+using EskaRock.Scraper.Models;
 using RestEase;
 
-namespace EskaRock.Scrapper;
+namespace EskaRock.Scraper;
 
 public interface IEskaRockClient
 {

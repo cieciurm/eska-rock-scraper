@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using EskaRock.Scrapper;
+using EskaRock.Scraper;
 
 namespace EskaRock;
 

@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
-using EskaRock.Scrapper.Models;
+using EskaRock.Scraper.Models;
 using Newtonsoft.Json;
 
-namespace EskaRock.Scrapper;
+namespace EskaRock.Scraper;
 
 public class SongReader
 {
