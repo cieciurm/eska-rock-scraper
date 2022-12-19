@@ -1,0 +1,4 @@
+{
+    "omnisharp.loggingLevel": "trace",
+    "omnisharp.useModernNet": false
+}
