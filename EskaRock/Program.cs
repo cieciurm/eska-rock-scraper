@@ -15,7 +15,7 @@ class Program
 
     static async Task Main(string[] args)
     {
-        var day = new DateTime(2023, 01, 30);
+        var day = new DateTime(2023, 02, 21);
 
         var reader = new SongReader();
         var songs = FromFile
