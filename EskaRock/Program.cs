@@ -15,7 +15,7 @@ class Program
 
     static async Task Main(string[] args)
     {
-        var day = new DateTime(2023, 02, 21);
+        var day = new DateTime(2023, 02, 25);
 
         var reader = new SongReader();
         var songs = FromFile
@@ -38,7 +38,7 @@ class Program
 
         var groupedByArtist = songs
             .GroupBy(x => x.Artists[0].Name)
-             .Where(x => x.Count() > ArtistsThreshold)
+            .Where(x => x.Count() > ArtistsThreshold)
             .OrderByDescending(x => x.Count())
             .ToDictionary(x => x.Key, x => x.Count());
 
