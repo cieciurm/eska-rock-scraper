@@ -11,11 +11,11 @@ class Program
     private const int ArtistsThreshold = 4;
 
     private const bool FromFile = false;
-    private static readonly ResultWriter _writer = new ResultWriter();
+    private static readonly ResultWriter _writer = new();
 
     static async Task Main(string[] args)
     {
-        var day = new DateTime(2023, 03, 15);
+        var day = new DateTime(2023, 05, 01);
 
         var reader = new SongReader();
         var songs = FromFile
