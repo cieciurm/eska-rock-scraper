@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using EskaRock.Scraper;
@@ -15,7 +16,9 @@ class Program
 
     static async Task Main(string[] args)
     {
-        var day = new DateTime(2023, 05, 06);
+        var startTime = Stopwatch.GetTimestamp();
+
+        var day = new DateTime(2023, 05, 23);
 
         var reader = new SongReader();
         var songs = FromFile
@@ -43,5 +46,11 @@ class Program
             .ToDictionary(x => x.Key, x => x.Count());
 
         _writer.WriteSummary(outDir, day, groupedBySong, groupedByArtist);
+
+        LogExecutionTime(startTime);
+
+        Console.ReadKey();
     }
+
+    private static void LogExecutionTime(long startTime) => Console.WriteLine($"Took {Stopwatch.GetElapsedTime(startTime)} to execute...");
 }
