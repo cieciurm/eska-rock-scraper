@@ -18,7 +18,7 @@ class Program
     {
         var startTime = Stopwatch.GetTimestamp();
 
-        var day = new DateTime(2023, 05, 28);
+        var day = new DateTime(2023, 05, 30);
 
         var reader = new SongReader();
         var songs = FromFile
