@@ -5,7 +5,7 @@ namespace EskaRock.Scraper;
 
 public static class Helper
 {
-    public static string FormatDate(DateTime date)
+    public static string FormatDate(DateOnly date)
     {
         return date.ToString("yyyy-MM-dd");
     }

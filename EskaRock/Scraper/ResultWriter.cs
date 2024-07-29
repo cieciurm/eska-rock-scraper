@@ -9,14 +9,14 @@ namespace EskaRock.Scraper;
 
 public class ResultWriter
 {
-    public void WriteRawResults(string dir, DateTime day, IEnumerable<Song> songs)
+    public void WriteRawResults(string dir, DateOnly day, IEnumerable<Song> songs)
     {
         var path = Path.Combine(dir, Helper.FormatDate(day) + ".txt");
 
         File.WriteAllText(path, JsonConvert.SerializeObject(songs));
     }
 
-    public void WriteSummary(string dir, DateTime day, IDictionary<string, int> songs, IDictionary<string, int> artists)
+    public void WriteSummary(string dir, DateOnly day, IDictionary<string, int> songs, IDictionary<string, int> artists)
     {
         var sb = new StringBuilder();
 

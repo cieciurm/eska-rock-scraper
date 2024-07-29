@@ -9,7 +9,7 @@ namespace EskaRock.Scraper;
 
 public class SongReader
 {
-    public async Task<IEnumerable<Song>> DownloadSongsAsync(DateTime day)
+    public async Task<IEnumerable<Song>> DownloadSongsAsync(DateOnly day)
     {
         var client = RestEase.RestClient.For<IEskaRockClient>("https://www.eskarock.pl");
 
@@ -26,7 +26,7 @@ public class SongReader
         return allSongs;
     }
 
-    public IEnumerable<Song> ReadSongsFromFile(DateTime day)
+    public IEnumerable<Song> ReadSongsFromFile(DateOnly day)
     {
         var str = File.ReadAllText(Helper.FormatDate(day) + ".txt");
 
